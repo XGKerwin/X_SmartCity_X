@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#08E11002"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="智慧党建"
+        android:textColor="#fff"
+        android:background="#E11002"
+        android:textSize="25dp"
+        android:gravity="center"
+        />
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:padding="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:flipInterval="4000"
+        android:inAnimation="@anim/right_in"
+        android:outAnimation="@anim/right_out"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="动态"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textColor="#DB1D10"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/recyclerView"
+        android:padding="5dp"
+        />
+
+</LinearLayout>

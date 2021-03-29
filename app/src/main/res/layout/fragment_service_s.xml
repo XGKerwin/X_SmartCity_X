@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/beijing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/title"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/btn_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="生活服务"
+                android:textSize="18dp"
+                android:padding="5dp"
+                android:textColor="#353535"
+                android:gravity="center"
+                android:background="@drawable/text_waihei"
+                />
+            <TextView
+                android:id="@+id/btn_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="便民服务"
+                android:textSize="18dp"
+                android:padding="5dp"
+                android:textColor="#353535"
+                android:gravity="center"
+                android:background="@drawable/text_waihei"
+                />
+
+            <TextView
+                android:id="@+id/btn_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="智慧养老"
+                android:textSize="18dp"
+                android:padding="5dp"
+                android:textColor="#353535"
+                android:gravity="center"
+                android:background="@drawable/text_waihei"
+                />
+
+            <TextView
+                android:id="@+id/btn_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="智慧旅游"
+                android:textSize="18dp"
+                android:padding="5dp"
+                android:textColor="#353535"
+                android:gravity="center"
+                android:background="@drawable/text_waihei"
+                />
+
+            <TextView
+                android:id="@+id/btn_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="智慧环保"
+                android:textSize="18dp"
+                android:padding="5dp"
+                android:textColor="#353535"
+                android:gravity="center"
+                android:background="@drawable/text_waihei"
+                />
+
+            <TextView
+                android:id="@+id/btn_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="智慧医疗"
+                android:textSize="18dp"
+                android:padding="5dp"
+                android:textColor="#353535"
+                android:gravity="center"
+                android:background="@drawable/text_waihei"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#A6A6A6"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recyclerView"
+                android:padding="3dp"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/beijing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:text="2020年4月"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="3dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="周日"
+                android:padding="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="18dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="周一"
+                android:padding="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="周二"
+                android:padding="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="周三"
+                android:padding="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="周四"
+                android:padding="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="周五"
+                android:padding="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="周六"
+                android:padding="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="18dp"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerView"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="2020-4-1"
+        android:padding="10dp"
+        android:id="@+id/txt_time"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下一步"
+        android:id="@+id/btn_xiayibu"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/btn_bai_txt_lan_r500"
+        />
+
+
+
+</LinearLayout>

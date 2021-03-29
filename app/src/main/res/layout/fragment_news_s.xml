@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/title"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <ViewFlipper
+                android:layout_margin="3dp"
+                android:autoStart="true"
+                android:id="@+id/view_flipper"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:flipInterval="4000"
+                android:inAnimation="@anim/right_in"
+                android:outAnimation="@anim/right_out"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="时政"
+                    android:layout_weight="1"
+                    android:id="@+id/btn_affairs"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/btn_hui_yuan"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="疫情"
+                    android:layout_weight="1"
+                    android:id="@+id/btn_epidemic"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:textSize="20dp"
+                    android:background="@drawable/btn_hui_yuan"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="娱乐"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:id="@+id/btn_entertainment"
+                    android:gravity="center"
+                    android:background="@drawable/btn_hui_yuan"
+                    android:textSize="20dp"
+                    />
+
+            </LinearLayout>
+
+            <com.example.x_smartcity_x.Util.MyRecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:id="@+id/recyclerView"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

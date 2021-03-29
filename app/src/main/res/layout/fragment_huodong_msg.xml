@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/beijing"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="开展“倡导国庆新民俗，打造爱国活动周”活动"
+                android:textSize="19dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:id="@+id/txt_title"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/img"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_msg"
+                android:textSize="17dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:padding="5dp"
+                android:text="央视网消息（新闻联播）：近日，中宣部部署在全国城乡广泛深入开展“倡导国庆新民俗，打造爱国活动周”活动，要求各地在2020年国庆节期间，结合疫情防控常态化要求做好安排，让群众上前台，让群众唱主角，积极推进致敬革命英烈、广泛悬挂国旗、传唱爱国歌曲、国庆体验旅游等群众民俗活动。"
+                />
+
+            <com.example.x_smartcity_x.Util.MyRecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recyclerView"
+                android:padding="3dp"
+                >
+            </com.example.x_smartcity_x.Util.MyRecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_baoming"
+                    android:text="参加人数："
+                    android:textSize="18dp"
+                    android:padding="4dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_baoming"
+                    android:text="报名"
+                    android:textSize="18dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bai_txt_bai_r100"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_pinglun"
+                    android:text="评论"
+                    android:textSize="18dp"
+                    android:padding="4dp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ed_pinglun"
+                    android:layout_marginLeft="10dp"
+                    />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_tijiao"
+                    android:text="提交"
+                    android:textSize="18dp"
+                    android:background="@drawable/bai_txt_bai_r100"
+                    />
+
+            </LinearLayout>
+
+
+            <com.example.x_smartcity_x.Util.MyRecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recyclerViewping"
+                android:padding="3dp"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

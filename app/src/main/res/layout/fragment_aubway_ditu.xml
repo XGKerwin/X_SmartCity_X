@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/beijing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="地铁2号线"
+            android:id="@+id/btn_ditie2"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/btn_bai_txt_lan_r500"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="地铁5号线"
+            android:id="@+id/btn_ditie5"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/btn_bai_txt_lan_r500"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="地铁6号线"
+            android:id="@+id/btn_ditie6"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/btn_bai_txt_lan_r500"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="地铁8号线"
+            android:id="@+id/btn_ditie8"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/btn_bai_txt_lan_r500"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/img_tu"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ditie1"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/img_ditie"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ditie_1"
+                android:padding="3dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

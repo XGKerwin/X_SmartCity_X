@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beijing"
+    >
+
+
+    <include layout="@layout/title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/geren_weizhi"
+            android:padding="3dp"
+            />
+
+        <EditText
+            android:id="@+id/ed_jianguo"
+            android:layout_width="200dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="建国门"
+            android:layout_marginRight="20dp"
+            />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:text="搜索"
+            android:gravity="center"
+            android:id="@+id/btn_sousuo"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_yuan_lan_r500"
+            />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ditie_ditu"
+            android:layout_gravity="center"
+            android:id="@+id/img_ditu"
+            android:layout_marginLeft="20dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="3dp"
+        android:id="@+id/recyclerView"
+        />
+
+
+</LinearLayout>

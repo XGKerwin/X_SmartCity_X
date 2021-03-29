@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/color_x"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="德州"
+        android:textSize="20dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:background="@drawable/edit_bai"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:padding="3dp"
+        android:id="@+id/seek_edit"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="搜索"
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:id="@+id/seek_btn"
+        android:gravity="center"
+        android:textColor="#2B2B2B"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/btn_yuan"
+        />
+
+</LinearLayout>

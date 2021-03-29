@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_home"
+        >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <include layout="@layout/title_seek"/>
+
+            <ViewFlipper
+                android:layout_margin="3dp"
+                android:autoStart="true"
+                android:id="@+id/view_flipper"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:flipInterval="4000"
+                android:inAnimation="@anim/right_in"
+                android:outAnimation="@anim/right_out"
+                />
+            
+            <androidx.recyclerview.widget.RecyclerView
+                android:horizontalSpacing="10dp"
+                android:id="@+id/recycler_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:numColumns="5"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="热门主题"
+                android:padding="10dp"
+                android:textSize="17dp"
+                android:textColor="#FF1744"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recycler_theme"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新闻专栏"
+                android:padding="10dp"
+                android:textSize="17dp"
+                android:textColor="#FF1744"
+                />
+
+            <com.example.x_smartcity_x.Util.MyRecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recycler_news"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+    </FrameLayout>
+
+</LinearLayout>
